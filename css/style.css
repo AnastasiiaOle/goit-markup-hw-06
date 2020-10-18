@@ -225,11 +225,28 @@ body {
     background:var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    }
+    border: none;
+}
+
+.footer-modal-button {
+    font-size: 16px;
+    line-height: 1.875;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
 
 
 .modal-form-btn {
     align-self: center;
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: none;
 }
 
 .advantages-list {
@@ -321,10 +338,8 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-
     height: 70px;
     width: 100%;
-
     background: rgba(47, 48, 58, 0.8);
 }
 
@@ -337,7 +352,6 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color: var(--white-text-color);
 }
 
@@ -361,6 +375,7 @@ body {
 .team-item {
     border-radius: 0px 0px 4px 4px;
 }
+
 .employee-name {
     font-weight: 500;
     font-size: 16px;
@@ -572,6 +587,7 @@ body {
     padding-top: 15px;
     padding-left: 16px;
 }
+
 
 .address {
     display: flex;
