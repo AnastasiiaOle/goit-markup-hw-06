@@ -228,17 +228,6 @@ body {
     border: none;
 }
 
-.footer-modal-button {
-    font-size: 16px;
-    line-height: 1.875;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-}
-
-
 .modal-form-btn {
     align-self: center;
     background: #188CE8;
@@ -508,7 +497,7 @@ body {
     margin-bottom: 9px;
 }
 
-.footer {
+.page-footer .container {
     display: flex;
 }
 
@@ -528,10 +517,11 @@ body {
     text-transform: uppercase;
     color: var(--white-text-color);
 }
+
 .footer-social-list {
-    margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .footer-social-list-link {
@@ -546,10 +536,14 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-social-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer-social-list-svg {
     fill: var(--white-text-color);
-    width: 20px;
-    height: 20px;
 }
 
 
@@ -562,13 +556,30 @@ body {
     margin-bottom: 20px;
 }
 
+.footer-submit-link {
+    display: flex;
+    justify-content: center
+}
+
+.footer-submit-link .modal-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .footer-submit-input {
     width: 358px;
     height: 50px;
+    margin-right: 12px;
     background-color: var(--background-color-service-footer);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+}
+
+.footer-submit-input:focus {
+    padding: 16px;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-submit {
@@ -789,6 +800,8 @@ body {
 .svg-close-button {
     width: 11px;
     height: 11px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form {
@@ -807,8 +820,13 @@ body {
 
 .modal-form-input:focus,
 .modal-form-message:focus {
+    padding: 12px 16px;
     outline: none;
     border: 1px solid var(--accent-color);
+}
+
+.modal-form-message:focus::placeholder {
+    padding: 6px 8px;
 }
 
 .modal-form-message {
@@ -850,6 +868,10 @@ body {
 
 .modal-form-input:focus + .modal-form-svg-icon {
     fill: var(--accent-color);
+}
+
+.modal-form-input:focus {
+    padding-left: 42px;
 }
 
 .modal-form-policy-label::before {
